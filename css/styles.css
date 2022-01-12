@@ -1,0 +1,149 @@
+/*
+=============== 
+Fonts
+===============
+*/
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+  /* dark shades of primary color*/
+  --clr-primary-1: hsl(43, 86%, 17%);
+  --clr-primary-2: hsl(43, 77%, 27%);
+  --clr-primary-3: hsl(43, 72%, 37%);
+  --clr-primary-4: hsl(42, 63%, 48%);
+  /* primary/main color */
+  --clr-primary-5: hsl(42, 78%, 60%);
+  /* black primary color */
+  --clr-black-1: #373331;
+  --clr-black-2: #000;
+  --clr-black-3: #333;
+  --clr-black-4: #63686e;
+  --clr-black-5: #272D2D;
+  --clr-black-6: #393e46;
+  --clr-black-7: #828489;
+  --clr-black-8: #272932;
+  --clr-black-9: #222;
+  /* lighter shades of primary color */
+  --clr-primary-6: hsl(43, 89%, 70%);
+  --clr-primary-7: hsl(43, 90%, 76%);
+  --clr-primary-8: hsl(45, 86%, 81%);
+  --clr-primary-9: hsl(45, 90%, 88%);
+  --clr-primary-10: hsl(45, 100%, 96%);
+  /* darkest grey - used for headings */
+  --clr-grey-1: hsl(209, 61%, 16%);
+  --clr-grey-2: hsl(211, 39%, 23%);
+  --clr-grey-3: hsl(209, 34%, 30%);
+  --clr-grey-4: hsl(209, 28%, 39%);
+  /* grey used for paragraphs */
+  --clr-grey-5: hsl(210, 22%, 49%);
+  --clr-grey-6: hsl(209, 23%, 60%);
+  --clr-grey-7: hsl(211, 27%, 70%);
+  --clr-grey-8: hsl(210, 31%, 80%);
+  --clr-grey-9: hsl(212, 33%, 89%);
+  --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-grey-11: #b6c2d9;
+  --clr-grey-12: #9e90a2;
+  --clr-grey-13: #999;
+  --clr-grey-14: #555;
+  /* white primary color*/
+  --clr-white-1: #fff;
+  --clr-white-2: #ffe5ab;
+  --clr-white-3: #fcea90;
+  --clr-white-4: #fff1c1;
+  --clr-white-5: #ffd6a4;
+  --clr-white-6: #f6f7fb;
+  --clr-white-7: #e0e0e0;
+  --clr-white-8: #fafafa;
+    /* blue primary color*/
+  --clr-blue-1: #4d7ea8;
+  --clr-blue-2: #3498db;
+  /* red primary color*/
+  --clr-red-1: #BB2525;
+  --clr-red-2: #e66b6b;
+  --clr-red-3: #ff7979;
+  /* yellow primary color */
+  --clr-yellow-1: #efedd6;
+
+  /* special color */
+  --clr-special-1: #7d5fff;
+  --clr-special-2: #7158e2;
+
+  --ff-primary: "Roboto", sans-serif;
+  --ff-secondary: "Open Sans", sans-serif;
+  --ff-third: 'Sacramento', cursive;
+  --transition: all .7s ease;
+  --transition-1: all .4s ease-in;
+  --transition-2: all 1s linear;
+  --spacing: 0.25rem;
+  --radius: 3.15rem;
+  --light-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px var(--clr-black-8);
+  --max-width: 1170px;
+}
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background: var(--clr-yellow-1);
+  font-family:  'Ubuntu', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+h1{
+  margin: .5rem;
+}
+
+.box{
+  background: steelblue;
+  color: var(--clr-white-1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25rem;
+  height: 12.5rem;
+  margin: .5rem;
+  border-radius: .5rem;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, .3);
+  transform: translateX(400%);
+  transition: var(--transition);
+}
+
+.box:nth-of-type(even){
+  transform: translateX(-400%);
+}
+
+.box.show{
+  transform: translateX(0);
+}
+
+.box h2{
+  font-size: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
